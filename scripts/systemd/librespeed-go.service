@@ -4,7 +4,6 @@ Documentation=https://github.com/FreedomNetNL/speedtest-go
 
 [Service]
 Restart=on-failure
-DynamicUser=yes
 User=librespeed
 EnvironmentFile=/etc/default/librespeed-go
 ExecStart=/usr/local/bin/librespeed-go $ARGS

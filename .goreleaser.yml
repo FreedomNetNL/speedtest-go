@@ -15,6 +15,18 @@ nfpms:
         dst: /etc/default/librespeed-go
       - src: scripts/systemd/librespeed-go.service
         dst: /usr/lib/systemd/system/librespeed-go.service
+      - src: web/assets
+        dst: /usr/local/share/librespeed-go/assets
+      - src: scripts/settings.toml
+        dst: /etc/librespeed-go/settings.toml
+        type: config
+      - src: scripts/librespeed-go.db
+        dst: /var/lib/librespeed-go/librespeed-go.db
+        type: noreplace
+        file_info:
+          owner: librespeed
+          group: librespeed
+          mode: 0600
     formats:
       - deb
       - rpm
