@@ -3,7 +3,7 @@ module github.com/librespeed/speedtest
 go 1.16
 
 require (
-	github.com/breml/rootcerts v0.2.1
+	github.com/breml/rootcerts v0.2.2
 	github.com/coreos/go-systemd v0.0.0-20191104093116-d3cd4ed1dbcf
 	github.com/go-chi/chi/v5 v5.0.7
 	github.com/go-chi/cors v1.2.0
@@ -21,5 +21,5 @@ require (
 	github.com/umahmood/haversine v0.0.0-20151105152445-808ab04add26
 	go.etcd.io/bbolt v1.3.6
 	golang.org/x/image v0.0.0-20211028202545-6944b10bf410
-	golang.org/x/sys v0.0.0-20220114195835-da31bd327af9 // indirect
+	golang.org/x/sys v0.0.0-20220128215802-99c3d69c2c27 // indirect
 )
