@@ -3,6 +3,7 @@
 adduser --quiet --system --home /var/lib/librespeed-go --no-create-home \
             --group --gecos "LibreSpeed-Go" librespeed
 
+mkdir -p /var/lib/librespeed-go
 touch /var/lib/librespeed-go/librespeed-go.db
 chown -R librespeed:librespeed /var/lib/librespeed-go/
 chmod 0600 /var/lib/librespeed-go/librespeed-go.db
